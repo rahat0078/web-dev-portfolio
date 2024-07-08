@@ -12,6 +12,9 @@ body{
 .secondary-bg{
     background-color: #FFF8F3;
 }
+.text-center{
+    text-align: center;
+}
 .dark-2{
     color: #474747;
 }
@@ -104,6 +107,9 @@ main{
     max-width: 1140px;
     margin: 0 auto;
 }
+main section{
+    margin: 130px 0;
+}
 
 /* about section start  */
 
@@ -116,7 +122,7 @@ main{
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
-    margin: 130px 0;
+
 
 }
 .about-container{
@@ -138,4 +144,17 @@ main{
     align-items: center;
     justify-content: space-around;
     margin-top: 30px;
+}
+.section-description{
+    padding: 0 115px;
+}
+/* skill section start  */
+.skills-container{
+    display: flex;
+    gap: 24px;
+    margin-top: 50px;
+}
+.skill{
+    padding: 30px;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
 }
