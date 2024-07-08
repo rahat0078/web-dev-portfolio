@@ -5,9 +5,12 @@ body{
 }
 
 
-/* shared style */
+/* ---------shared style------- */
 .text-primary{
     color: #FD6E0A;
+}
+.secondary-bg{
+    background-color: #FFF8F3;
 }
 .dark-2{
     color: #474747;
@@ -26,6 +29,11 @@ body{
     border-radius: 5px;
 }
 
+.section-title{
+    font-size: 35px;
+    font-weight: 800;
+    color: #181818;
+}
 
 /* header section start */
 
@@ -89,3 +97,45 @@ nav li a{
 }
 
 /* header section end  */
+
+  /* -------main styles---- */
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about section start  */
+
+.section-description{
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+}
+.about{
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+    margin: 130px 0;
+
+}
+.about-container{
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.item-description{
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+.item-title{
+    margin: 2px 0;
+    padding: 0;
+}
+.about-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
