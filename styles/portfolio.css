@@ -125,10 +125,10 @@ main section{
 
 
 }
-.about-container{
+/* .about-container{
     background-color: #FFFFFF;
     padding: 20px;
-}
+} */
 .item-description{
     font-size: 18px;
     font-weight: 800;
@@ -145,9 +145,9 @@ main section{
     justify-content: space-around;
     margin-top: 30px;
 }
-.section-description{
+/* .section-description{
     padding: 0 115px;
-}
+} */
 /* skill section start  */
 .skills-container{
     display: flex;
@@ -181,14 +181,14 @@ main section{
     font-weight: 600;
 }
 
-.experience{
+/* .experience{
     width: 511px;
     text-align: left;
-}
+} */
 
 hr{
     margin: 30px 0;
-    width: 558px;
+    /* width: 558px; */
     color: #D1D1D1;
 }
 .resume-container{
@@ -199,6 +199,9 @@ hr{
 .resume-btn-container{
     margin-top: 50px;
 }
+
+
+/* ------footer style------- */
 
 footer{
     padding: 130px 230px;
@@ -214,16 +217,63 @@ form{
     flex-direction: column;
     gap: 24px;
 }
-input{
+input, textarea{
     width: 461px;
     padding: 30px 18px;
     border: none;
 }
-textarea{
+/* textarea{
     border: none;
     width: 492px;
     padding: 10px 15px;
-}
+} */
 .submit-btn{
     margin-top: 24px;
+}
+
+
+
+/* responsive for mobile screen unsing media quary */
+@media screen and (min-width: 992px) {
+    .about-container{
+        background-color: #FFFFFF;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills-container, .resume-container, footer, .about-items, .banner, nav, nav ul{
+        flex-direction: column;
+    } 
+    nav ul{
+        gap: 15px;
+    }
+    .banner{
+        margin: 10px;
+    } 
+    
+    .banner-profile{
+        width: 100%;
+    }
+    
+    
+    .header{
+        background-image: none;
+    } 
+
+
+
+    footer, .about{
+        padding: 20px ;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    input, textarea{
+        width: calc(100% - 40px);
+    }
+    .about-items{
+        gap: 20px ;
+    }
+
 }
